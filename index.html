@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="icon" href="./image/calculator.svg">
+    <link rel="stylesheet" href="./style.css" />
+    <title>Calculadora IMC</title>
+  </head>
+  <body>
+    <main class="main">
+      <div class="calculator-container">
+        <h1>Calculadora IMC</h1>
+        <section class="form-group-container">
+          <div class="form-group">
+            <label for="weight"
+              >Peso<br />
+              (kg)</label
+            >
+            <input type="number" name="weight" id="weight" value="0" step="any" />
+          </div>
+
+          <div class="form-group">
+            <label for="height"
+              >Altura<br />
+              (m)</label
+            >
+            <input type="number" name="height" id="height" value="0" step="any" />
+          </div>
+
+          <div class="btn-imc">
+            <button class="btn" id="restart">reiniciar</button>
+            <button class="btn" id="calculate">calcular</button>
+          </div>
+        </section>
+        <section class="imc-result">
+          <h3>seu imc é:</h3>
+          <h2 class="imc-value">0</h2>
+          <p class="classification"></p>
+        </section>
+        <aside class="classifications-imc">
+          <div>
+            <h4>baixo</h4>
+            <p>< 18.5</p>
+          </div>
+          <div>
+            <h4>normal</h4>
+            <p>< 18.5 — 25</p>
+          </div>
+          <div>
+            <h4>sobrepeso</h4>
+            <p>25 — 30</p>
+          </div>
+          <div>
+            <h4>obesidade</h4>
+            <p>≥ 30</p>
+          </div>
+        </aside>
+      </div>
+    </main>
+    <script src="./script.js"></script>
+</html>
